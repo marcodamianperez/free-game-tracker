@@ -1,0 +1,16 @@
+{
+  "name": "free-game-tracker",
+  "version": "1.0.0",
+  "description": "free games for multiple platforms",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel src/index.html --open",
+    "build": "parcel build src/index.html"
+  },
+  "author": "Marco Pérez",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.8.3",
+    "parcel": "^2.8.3"
+  }
+}
