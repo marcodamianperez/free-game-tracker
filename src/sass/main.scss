@@ -1,11 +1,14 @@
 @import "abstracts/variables";
 
+@import "base/animations";
 @import "base/base";
 @import "base/typography";
+@import "base/utilities";
 
 @import "components/buttons";
+@import "components/navbar";
 
 @import "layout/footer";
 
-@import "pages/home";
 @import "pages/details";
+@import "pages/home";

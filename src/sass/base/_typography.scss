@@ -1,0 +1,20 @@
+html {
+    font-size: 62.5%;
+}
+
+.heading-primary {
+    color: $color-white;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    &--main {
+        font-size: 3.2rem;
+    }
+
+    &--sub {
+        font-weight: 400;
+        font-size: 1.6rem;
+        width: 80%;
+    }
+}

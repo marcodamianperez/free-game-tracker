@@ -4,7 +4,7 @@
   "description": "free games for multiple platforms",
   "main": "index.js",
   "scripts": {
-    "start": "parcel src/index.html --open",
+    "start": "parcel src/index.html",
     "build": "parcel build src/index.html"
   },
   "author": "Marco Pérez",

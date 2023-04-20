@@ -1,0 +1,46 @@
+.btn {
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    text-transform: uppercase;
+    display: inline-block;
+    width: fit-content;
+
+    &--white {
+        background-color: $color-white;
+        color: #2B66A8;
+    }
+}
+
+// .scroll-down-btn {
+//     position: absolute;
+//     top: 90%;
+//     left: 50%;
+//     transform: translate(-50%, -50%);
+//     cursor: pointer;
+//     height: 5.5rem;
+//     width: 3.5rem;
+//     border: 2px solid #fff;
+//     border-radius: 10rem;
+
+//     &::before,
+//     &::after {
+//         content: "";
+//         position: absolute;
+//         background-color: #fff;
+//         width: 3px;
+//         top: 30%;
+//         left: 50%;
+//         transform: translate(-50%, -50%);
+//     }
+
+//     &::before {
+//         height: 1rem;
+//     }
+
+//     &::after {
+//         height: 4px;
+//         animation-name: scroll-down-move;
+//         animation-duration: 5000ms;
+//         animation-iteration-count: infinite;
+//     }
+// }
