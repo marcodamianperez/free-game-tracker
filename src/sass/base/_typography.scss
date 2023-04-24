@@ -1,6 +1,6 @@
 html {
     font-size: 62.5%;
-    
+
     @include respond(x-small) {
         font-size: 68.75%;      //1rem = 11px
     }

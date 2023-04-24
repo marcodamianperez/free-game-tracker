@@ -10,4 +10,8 @@
     color: $color-grey-light;
     padding: 2rem 0;
     white-space: nowrap;
+
+    &:active {
+        color: $color-white;
+    }
 }
