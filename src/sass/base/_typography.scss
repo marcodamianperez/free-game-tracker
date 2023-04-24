@@ -1,5 +1,21 @@
 html {
     font-size: 62.5%;
+    
+    @include respond(x-small) {
+        font-size: 68.75%;      //1rem = 11px
+    }
+
+    @include respond(small) {
+        font-size: 75%;         //1rem = 12px
+    }
+
+    @include respond(medium) {
+        font-size: 81.25%;      //1rem = 13px
+    }
+
+    @include respond(large) {
+        font-size: 87.5%;      //1rem = 14px
+    }
 }
 
 .heading-primary {
