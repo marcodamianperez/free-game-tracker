@@ -19,3 +19,18 @@
     background-color: $color-purple-dark;
     padding: 2rem 0;
 }
+
+.filter {
+    background-color: $color-purple-medium;
+    padding-bottom: 2rem;
+}
+
+.cards {
+    background-color: $color-purple-medium;
+    padding: 2rem 0;
+}
+
+.card-grid-container {
+    display: grid;
+    gap: 2rem;
+}

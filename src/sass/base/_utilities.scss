@@ -9,3 +9,9 @@
 .u-margin-bottom-small {
     margin-bottom: 2rem;
 }
+
+.u-break {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, $color-purple-medium, rgba($color-black, 0.75), $color-purple-medium);
+}

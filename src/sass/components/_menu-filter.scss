@@ -1,0 +1,13 @@
+.menu-filter {
+    display: flex;
+    gap: 2rem;
+    overflow-x: scroll;
+}
+
+.menu-btn {
+    background-color: transparent;
+    border: none;
+    color: $color-grey-light;
+    padding: 2rem 0;
+    white-space: nowrap;
+}

@@ -1,0 +1,69 @@
+.card {
+    background-color: $color-purple-light;
+    border-radius: 1rem;
+    margin: 0 auto;
+    color: $color-white;
+    box-shadow: 5px 5px 10px rgba($color-black, 0.4);
+
+    &__image {
+        border-radius: 1rem 1rem 0 0;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__body {
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    &__title {
+        text-transform: uppercase;
+        font-size: 2rem;
+    }
+
+    &__info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__price {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        
+        &-previous {
+            text-decoration: line-through;
+            font-size: 1.7rem;
+        }
+    }
+
+    &__platforms {
+        font-size: 1.4rem;
+    }
+
+    &__social {
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+
+        i {
+            font-size: 1.5rem;
+        }
+    }
+
+    &__metric {
+        font-size: 1.2rem;
+
+        i {
+            margin-right: .5rem;
+        }
+    }
+}
