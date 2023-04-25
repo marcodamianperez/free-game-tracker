@@ -7,7 +7,7 @@
 
     &__text-box {
         position: absolute;
-        top: 35%;
+        top: 25%;
         left: 0;
         display: flex;
         flex-direction: column;
@@ -22,7 +22,6 @@
 
 .filter {
     background-color: $color-purple-medium;
-    padding-bottom: 2rem;
 }
 
 .cards {
