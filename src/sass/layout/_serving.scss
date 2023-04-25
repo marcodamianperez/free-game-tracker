@@ -1,0 +1,15 @@
+.serving {
+    background-color: $color-purple-dark;
+    padding: 2rem 0;
+
+    &__text {
+        color: $color-white;
+        font-size: 1.6rem;
+        margin: 1rem 0;
+    
+        i {
+            color: $color-blue;
+            margin-right: 1rem;
+        }
+    }
+}
