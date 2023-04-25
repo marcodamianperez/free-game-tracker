@@ -17,5 +17,5 @@
 .u-break {
     border: 0;
     height: 1px;
-    background-image: linear-gradient(to right, $color-purple-medium, rgba($color-black, 0.75), $color-purple-medium);
+    background-image: linear-gradient(to right, $color-purple-medium, $color-purple-light, $color-purple-medium);
 }
