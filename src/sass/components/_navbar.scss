@@ -3,9 +3,30 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 
     &__items {
         display: none;
+
+        &-show {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100vw;
+            z-index: 1;
+            background-color: rgba($color-black, .9);
+            padding: 2rem 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+        }
+    }
+
+    &__link {
+        color: $color-white;
+        font-size: 1.6rem;
     }
 
     &__logo {
