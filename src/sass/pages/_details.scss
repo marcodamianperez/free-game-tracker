@@ -1,5 +1,5 @@
 .details {
-    background-color: $color-purple-medium;
+    background-color: $color-primary-medium;
     padding: 2rem 0;
 }
 
@@ -68,7 +68,7 @@
         grid-template-areas: 
         "time-left  times-claimed"
         "btn        btn";
-        background-color: $color-purple-light;
+        background-color: $color-primary-light;
         padding: 2rem;
         border-radius: 1rem;
 
