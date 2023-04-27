@@ -2,6 +2,14 @@
     display: flex;
     gap: 1rem;
 
+    @include respond(x-small) {
+        gap: 3rem;
+    }
+
+    @include respond(small) {
+        gap: 6rem;
+    }
+
     &__field {
         border: none;
     }
@@ -10,6 +18,10 @@
         color: $color-grey-light;
         font-size: 1.4rem;
         margin-right: .5rem;
+
+        @include respond(small) {
+            font-size: 1.3rem;
+        }
     }
 
     &__input {

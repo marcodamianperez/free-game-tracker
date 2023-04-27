@@ -24,6 +24,14 @@
         display: flex;
         flex-direction: column;
         gap: 1.5rem;
+
+        @include respond(x-small) {
+            padding: 1.5rem;
+        }
+
+        @include respond(small) {
+            padding: 1rem;
+        }
     }
 
     &__title {
@@ -31,6 +39,10 @@
         font-size: 2rem;
         color: inherit;
         display: block;
+
+        @include respond(small) {
+            font-size: 1.6rem;
+        }
     }
 
     &__info {
@@ -47,11 +59,19 @@
         &-previous {
             text-decoration: line-through;
             font-size: 1.7rem;
+
+            @include respond(small) {
+                font-size: 1.4rem;
+            }
         }
     }
 
     &__platforms {
         font-size: 1.4rem;
+
+        @include respond(small) {
+            font-size: 1.2rem;
+        }
 
         span {
             color: $color-grey-light;
@@ -65,11 +85,19 @@
 
         i {
             font-size: 1.8rem;
+
+            @include respond(small) {
+                font-size: 1.5rem;
+            }
         }
     }
 
     &__metric {
         font-size: 1.2rem;
+
+        @include respond(small) {
+            font-size: 1rem;
+        }
 
         i {
             margin-right: .5rem;

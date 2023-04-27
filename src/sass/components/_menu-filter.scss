@@ -18,4 +18,8 @@
     @include respond(x-small) {
         font-size: 1.3rem;
     }
+
+    @include respond(small) {
+        font-size: 1.2rem;
+    }
 }
