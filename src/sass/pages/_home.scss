@@ -31,4 +31,8 @@
     @include respond(small) {
         grid-template-columns: 1fr 1fr;
     }
+
+    @include respond(medium) {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }

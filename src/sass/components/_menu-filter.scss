@@ -2,6 +2,13 @@
     display: flex;
     gap: 2rem;
     overflow-x: scroll;
+
+    // hide scrollbar
+    ::-webkit-scrollbar {
+        display: none;
+    }
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 
 .menu-btn {
@@ -21,5 +28,14 @@
 
     @include respond(small) {
         font-size: 1.2rem;
+    }
+
+    @include respond(small) {
+        font-size: 1.1rem;
+
+        &:hover {
+            color: $color-white;
+            cursor: pointer;
+        }
     }
 }

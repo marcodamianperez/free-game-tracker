@@ -53,4 +53,9 @@ html {
 .paragraph {
     font-size: 1.4rem;
     line-height: 1.4;
+
+    @include respond(medium) {
+        grid-area: description;
+        font-size: 1.2rem;
+    }
 }

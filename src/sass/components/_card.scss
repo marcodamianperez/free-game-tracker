@@ -32,6 +32,10 @@
         @include respond(small) {
             padding: 1rem;
         }
+
+        @include respond(medium) {
+            gap: 1.2rem;
+        }
     }
 
     &__title {
@@ -42,6 +46,10 @@
 
         @include respond(small) {
             font-size: 1.6rem;
+        }
+
+        @include respond(medium) {
+            font-size: 1.4rem;
         }
     }
 
@@ -63,6 +71,10 @@
             @include respond(small) {
                 font-size: 1.4rem;
             }
+
+            @include respond(medium) {
+                font-size: 1.2rem;
+            }
         }
     }
 
@@ -71,6 +83,10 @@
 
         @include respond(small) {
             font-size: 1.2rem;
+        }
+
+        @include respond(small) {
+            font-size: 1rem;
         }
 
         span {
@@ -89,6 +105,10 @@
             @include respond(small) {
                 font-size: 1.5rem;
             }
+
+            @include respond(small) {
+                font-size: 1.2rem;
+            }
         }
     }
 
@@ -97,6 +117,10 @@
 
         @include respond(small) {
             font-size: 1rem;
+        }
+
+        @include respond(medium) {
+            font-size: .9rem;
         }
 
         i {
