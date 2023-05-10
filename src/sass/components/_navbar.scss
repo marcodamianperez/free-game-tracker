@@ -1,12 +1,15 @@
 .navbar {
-    padding: 1.5rem 7.5%;
+    width: 85%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.5rem 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative;
 
     @include respond(small) {
-        padding: 2.5rem 7.5%;
+        padding: 2.5rem 0;
     }
 
     &__items {

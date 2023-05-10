@@ -83,6 +83,10 @@
             @include respond(small) {
                 font-size: 1.8rem;
             }
+
+            @include respond(large) {
+                font-size: 1.6rem;
+            }
         }
     }
 

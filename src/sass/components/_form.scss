@@ -22,11 +22,17 @@
         @include respond(small) {
             font-size: 1.3rem;
         }
+
+
     }
 
     &__input {
         border: none;
         background-color: $color-primary-medium;
         color: $color-white;
+
+        @include respond(large) {
+            font-size: 1.1rem;
+        }
     }
 }
