@@ -5,6 +5,14 @@
     color: $color-white;
     box-shadow: 5px 5px 10px rgba($color-black, 0.4);
     width: 100%;
+    transition: all 200ms ease-in-out;
+
+    @include respond(medium) {
+        &:hover {
+            transform: scale(1.02);
+            box-shadow: 5px 5px 15px rgba($color-black, 0.3);
+        }
+    }
 
     &__image {
         border-radius: 1rem 1rem 0 0;
@@ -106,8 +114,12 @@
                 font-size: 1.5rem;
             }
 
-            @include respond(small) {
+            @include respond(medium) {
                 font-size: 1.2rem;
+
+                &:hover {
+                    cursor: pointer;
+                }
             }
         }
     }

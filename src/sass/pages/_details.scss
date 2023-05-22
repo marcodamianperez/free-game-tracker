@@ -84,6 +84,12 @@
                 font-size: 1.8rem;
             }
 
+            @include respond(medium) {
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+
             @include respond(large) {
                 font-size: 1.6rem;
             }

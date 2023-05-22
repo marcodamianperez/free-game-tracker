@@ -24,4 +24,12 @@
     font-size: inherit;
     color: inherit;
     text-decoration: underline;
+
+    @include respond(medium) {
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
 }

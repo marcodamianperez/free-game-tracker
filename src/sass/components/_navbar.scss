@@ -45,21 +45,41 @@
         text-align: center;
 
     }
-    
+
     &__link {
         display: inline-block;
         color: $color-white;
         font-size: 1.6rem;
         width: 100%;
         padding: 1.5rem 0;
-
-        &:active {
-            color: $color-grey-light;
-        }
+        position: relative;
 
         @include respond(small) {
             font-size: 1.2rem;
             padding: 0;
+        }
+
+        @include respond(medium) {
+
+            &::before {
+                content: "";
+                background-color: $color-white;
+                width: 0;
+                height: 1px;
+                position: absolute;
+                bottom: -5px;
+                left: 0;
+                transition: width .3s;
+
+            }
+
+            &:hover::before {
+                width: 100%;
+            }
+        }
+
+        &:active {
+            color: $color-grey-light;
         }
     }
 
