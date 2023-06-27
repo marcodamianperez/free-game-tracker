@@ -2,13 +2,12 @@ import {
   renderGiveaways,
   showQtyOfGiveaways,
   filterByPlatform,
+  handlerDetails,
 } from "./functions.js";
-import { menuFilter } from "./globals.js";
-
-const initialOptions =
-  "filter?platform=steam.epic-games-store.android.ps4.ps5&type=game.loot&sort-by=popularity";
+import { initialOptions, menuFilter, cardsContainer } from "./globals.js";
 
 menuFilter.addEventListener("click", (e) => filterByPlatform(e));
+cardsContainer.addEventListener("click", (e) => handlerDetails(e));
 
 showQtyOfGiveaways();
 renderGiveaways(initialOptions);

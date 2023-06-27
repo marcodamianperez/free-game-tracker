@@ -41,15 +41,15 @@ export const renderGiveaways = async (options) => {
     giveaways.forEach((giveaway) => {
       globals.cardsContainer.innerHTML += `
             <div class="card">
-                <a href="./pages/details.html" class="card__image" id="${
-                  giveaway.id
-                }">
-                    <img src="${giveaway.thumbnail}" alt="thumbnail">
+                <a href="./pages/details.html" class="card__image">
+                    <img src="${giveaway.thumbnail}" alt="thumbnail" data-id="${
+        giveaway.id
+      }">
                 </a>
                 <div class="card__body">
                     <a href="./pages/details.html" class="card__title" title="${
                       giveaway.title
-                    }" id="${giveaway.id}">
+                    }" data-id="${giveaway.id}">
                         ${giveaway.title}
                     </a>
                     <div class="card__info">
@@ -68,7 +68,7 @@ export const renderGiveaways = async (options) => {
                     <div class="card__social">
                         <i class="bi bi-share-fill"></i>
                         <i class="bi bi-heart"></i>
-                        <a href="./pages/details.html" class="btn btn--color" id="${
+                        <a href="./pages/details.html" class="btn btn--color" data-id="${
                           giveaway.id
                         }">View Giveaway</a>
                     </div>
@@ -94,3 +94,24 @@ export const filterByPlatform = (e) => {
   console.log(queryString);
   renderGiveaways(queryString);
 };
+
+export const handlerDetails = (e) => {
+  e.target.hasAttribute("data-id") &&
+    localStorage.setItem("id", e.target.dataset.id);
+};
+
+export const getDetails = async () => {
+  const id = localStorage.getItem("id");
+  try {
+    const response = await fetch(
+      `${globals.BASE_URL}giveaway?id=${id}`,
+      globals.options
+    );
+    const data = await response.json();
+    renderDetails(data);
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+export const renderDetails = (details) => {};
