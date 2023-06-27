@@ -1,43 +1,43 @@
 .header {
-    height: 70vh;
-    background-image: url(./../assets/images/home-background.jpg);
-    background-size: cover;
-    background-position: center;
-    position: relative;
+  height: 70vh;
+  background-image: url(./../assets/images/home-background.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
 
-    &__text-box {
-        position: absolute;
-        top: 25%;
-        left: 0;
-        display: flex;
-        flex-direction: column;
-        gap: 2rem;
-
-        @include respond(small) {
-            top: 17%;
-            width: 70%;
-        }
-    }
-}
-
-.filter {
-    background-color: $color-primary-medium;
-}
-
-.card-grid-container {
-    display: grid;
+  &__text-box {
+    position: absolute;
+    top: 25%;
+    left: 0;
+    display: flex;
+    flex-direction: column;
     gap: 2rem;
 
     @include respond(small) {
-        grid-template-columns: 1fr 1fr;
+      top: 17%;
+      width: 70%;
     }
+  }
+}
 
-    @include respond(medium) {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
+.filter {
+  background-color: $color-primary-medium;
+}
 
-    @include respond(large) {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        gap: 1.5rem;
-    }
+.card-grid-container {
+  display: grid;
+  gap: 2rem;
+
+  @include respond(small) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @include respond(medium) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  @include respond(large) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1.5rem;
+  }
 }

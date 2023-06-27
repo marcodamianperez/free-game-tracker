@@ -1,61 +1,67 @@
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
 
-    @include respond(x-small) {
-        font-size: 68.75%;      //1rem = 11px
-    }
+  @include respond(x-small) {
+    font-size: 68.75%; //1rem = 11px
+  }
 
-    @include respond(small) {
-        font-size: 75%;         //1rem = 12px
-    }
+  @include respond(small) {
+    font-size: 75%; //1rem = 12px
+  }
 
-    @include respond(medium) {
-        font-size: 81.25%;      //1rem = 13px
-    }
+  @include respond(medium) {
+    font-size: 81.25%; //1rem = 13px
+  }
 
-    @include respond(large) {
-        font-size: 87.5%;      //1rem = 14px
-    }
+  @include respond(large) {
+    font-size: 87.5%; //1rem = 14px
+  }
 }
 
 .heading-primary {
-    color: $color-white;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+  color: $color-white;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 
-    &--main {
-        font-size: 3.2rem;
+  &--main {
+    font-size: 3.2rem;
 
-        @include respond(small) {
-            font-size: 3.6rem;
-        }
+    @include respond(small) {
+      font-size: 3.6rem;
     }
+  }
 
-    &--sub {
-        font-weight: 400;
-        font-size: 1.6rem;
-        width: 80%;
-    }
+  &--sub {
+    font-weight: 400;
+    font-size: 1.6rem;
+    width: 80%;
+  }
 }
 
 .heading-secondary {
-    color: $color-white;
-    font-size: 2.5rem;
+  color: $color-white;
+  font-size: 2.5rem;
 }
 
 .heading-tertiary {
-    color: $color-white;
-    font-size: 2rem;
-    font-weight: 400;
+  color: $color-white;
+  font-size: 2rem;
+  font-weight: 400;
 }
 
 .paragraph {
-    font-size: 1.4rem;
-    line-height: 1.4;
+  font-size: 1.4rem;
+  line-height: 1.4;
 
-    @include respond(medium) {
-        grid-area: description;
-        font-size: 1.2rem;
-    }
+  @include respond(medium) {
+    grid-area: description;
+    font-size: 1.2rem;
+  }
+}
+
+.no-giveaways {
+  font-size: 2rem;
+  color: $color-primary-light;
+  padding: 4rem 0;
 }
