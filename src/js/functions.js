@@ -171,6 +171,8 @@ export const renderDetails = (details) => {
   ></a>
 </div>
   `;
+
+  renderGiveaways(globals.relatedOptions);
 };
 
 const calculateTimeLeft = (date) => {

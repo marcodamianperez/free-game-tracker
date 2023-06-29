@@ -3,6 +3,8 @@ export const API_KEY = "4602bf6bb7msh3f44fa8d4389f04p1aa48djsn1fff21c0b953";
 
 export const initialOptions =
   "filter?platform=steam.epic-games-store.android.ps4.ps5&type=game.loot&sort-by=popularity";
+export const relatedOptions =
+  "filter?platform=itchio.epic-games-store.ios.ps4.xbox-one&type=game.loot&sort-by=value";
 
 export const options = {
   method: "GET",
