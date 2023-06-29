@@ -68,7 +68,7 @@ export const renderGiveaways = async (options) => {
                     <div class="card__social">
                         <i class="bi bi-share-fill"></i>
                         <i class="bi bi-heart"></i>
-                        <a href="./pages/details.html" class="btn btn--color" data-id="${
+                        <a href="/pages/details.html" class="btn btn--color" data-id="${
                           giveaway.id
                         }">View Giveaway</a>
                     </div>
