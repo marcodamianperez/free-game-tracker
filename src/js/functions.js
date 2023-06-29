@@ -114,4 +114,90 @@ export const getDetails = async () => {
   }
 };
 
-export const renderDetails = (details) => {};
+export const renderDetails = (details) => {
+  console.log(details);
+  let platforms = details.platforms.split(",");
+  platforms = platforms
+    .map((p) => `<span class="badge badge--solid">${p}</span>`)
+    .join("");
+
+  let instructions = details.instructions.split("\r\n");
+  instructions = instructions
+    .map((i) => `<p class="paragraph">${i}</p>`)
+    .join("");
+
+  globals.giveaway.innerHTML = `
+  <div class="giveaway__image">
+  <img src="${details.image}" alt="giveaway image" />
+</div>
+<div class="giveaway__title">${details.title}</div>
+<div class="giveaway__info">
+  <div class="giveaway__info-platform">
+    <span>${details.type}</span><span>|</span>
+    ${platforms}
+  </div>
+  <div class="giveaway__info-price">
+    <span class="badge badge--ghost">Free</span>
+    <span class="card__price-previous">${
+      details.worth !== "N/A" ? details.worth : ""
+    }</span>
+  </div>
+  <div class="giveaway__info-social">
+    <i class="bi bi-share-fill"></i>
+    <i class="bi bi-heart"></i>
+  </div>
+</div>
+<hr class="u-break" />
+<p class="paragraph">
+  ${details.description}
+</p>
+<div class="giveaway__instructions">
+  <div class="giveaway__instructions-title">Instructions</div>
+  ${instructions}
+</div>
+<div class="giveaway__cta">
+  <span class="giveaway__cta-time-left">
+    <i class="bi bi-clock"></i><span>
+      ${calculateTimeLeft(details.end_date)}
+    </span>
+  </span>
+  <span class="giveaway__cta-times-claimed">
+    <i class="bi bi-people-fill"></i><span>${details.users} times claimed</span>
+  </span>
+  <a href="${
+    details.open_giveaway_url
+  }" target="_blank" class="btn btn--color giveaway__cta-btn btn-icon"
+    >Get Giveaway<i class="bi bi-box-arrow-up-right"></i
+  ></a>
+</div>
+  `;
+};
+
+const calculateTimeLeft = (date) => {
+  if (date === "N/A") {
+    return "Limited time";
+  }
+
+  const now = new Date();
+  const endDate = new Date(date);
+  const diff = endDate.getTime() - now.getTime();
+
+  const seconds = Math.floor(diff / 1000);
+  const minutes = Math.floor(seconds / 60);
+  const hours = Math.floor(minutes / 60);
+  const days = Math.floor(hours / 24);
+
+  let timeLeft;
+
+  if (days > 0) {
+    timeLeft = `${days} day(s) left`;
+  } else if (hours > 0) {
+    timeLeft = `${hours} hour(s) left`;
+  } else if (minutes > 0) {
+    timeLeft = `${minutes} minute(s) left`;
+  } else {
+    timeLeft = "Less than a minute left";
+  }
+
+  return timeLeft;
+};

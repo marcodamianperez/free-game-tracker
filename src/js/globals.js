@@ -17,3 +17,5 @@ export const qtyDlc = document.querySelector("#qtyDlc");
 export const qtyBeta = document.querySelector("#qtyBeta");
 export const cardsContainer = document.querySelector("#cards-container");
 export const menuFilter = document.querySelector("#menu-filter");
+
+export const giveaway = document.querySelector("#giveaway");
