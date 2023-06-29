@@ -4,7 +4,8 @@
   "description": "free games for multiple platforms",
   "scripts": {
     "start": "parcel src/index.html",
-    "build": "parcel build src/index.html"
+    "build": "parcel build src/index.html",
+    "deploy": "gh-pages -d dist"
   },
   "author": "Marco Pérez",
   "license": "ISC",
