@@ -149,7 +149,7 @@ export const renderDetails = (details) => {
 </div>
 <hr class="u-break" />
 <p class="paragraph">
-  ${details.description}
+  ${details.description.replace(/\n/g, "<br>")}
 </p>
 <div class="giveaway__instructions">
   <div class="giveaway__instructions-title">Instructions</div>
