@@ -2,9 +2,10 @@
   "name": "free-game-tracker",
   "version": "1.0.0",
   "description": "free games for multiple platforms",
+  "source": "src/index.html",
   "scripts": {
-    "start": "parcel src/index.html",
-    "build": "parcel build src/index.html",
+    "dev": "parcel",
+    "build": "parcel build",
     "deploy": "gh-pages -d dist"
   },
   "author": "Marco Pérez",

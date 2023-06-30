@@ -103,6 +103,12 @@
     flex-direction: column;
     gap: 1rem;
 
+    a,
+    a:link,
+    a:visited {
+      color: $color-blue;
+    }
+
     @include respond(medium) {
       grid-area: instructions;
     }

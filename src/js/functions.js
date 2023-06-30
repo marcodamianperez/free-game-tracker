@@ -31,7 +31,6 @@ export const showQtyOfGiveaways = async () => {
 
 export const renderGiveaways = async (options) => {
   const giveaways = await getGiveaways(options);
-  console.log(giveaways);
 
   if (giveaways.status === 0) {
     globals.cardsContainer.innerHTML = `<p class="no-giveaways">No giveaways found</p>`;
@@ -91,7 +90,6 @@ export const filterByPlatform = (e) => {
   platform === "all"
     ? (queryString = "giveaways")
     : (queryString = `giveaways?platform=${platform}`);
-  console.log(queryString);
   renderGiveaways(queryString);
 };
 
@@ -115,7 +113,6 @@ export const getDetails = async () => {
 };
 
 export const renderDetails = (details) => {
-  console.log(details);
   let platforms = details.platforms.split(",");
   platforms = platforms
     .map((p) => `<span class="badge badge--solid">${p}</span>`)
