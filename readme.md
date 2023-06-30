@@ -29,7 +29,7 @@ Assuming you installed the dependencies and the dev server is running you should
 
 ## 🌐 Live version
 
-Check out the live version [here](https://marcodamianperez.github.io/free-game-tracker/).
+Check out the live version [here](https://marcodamianperez.github.io/free-game-tracker/). This online version doesn't properly work like when you run the development server due to some issues that I'm having with the bundler that I'm currently using. It will be fixed soon.
 
 ## 🌟 Features
 
@@ -44,4 +44,5 @@ Check out the live version [here](https://marcodamianperez.github.io/free-game-t
 
 ## 📸 Screenshots
 
-_Coming soon_
+![phone](https://i.imgur.com/PHW6gOU.png)
+![laptop](https://i.imgur.com/wlSummI.png)
