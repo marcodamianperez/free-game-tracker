@@ -6,13 +6,15 @@
   "scripts": {
     "dev": "parcel",
     "build": "parcel build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "sass": "sass src/sass/main.scss dist/css/styles.css"
   },
   "author": "Marco Pérez",
   "license": "ISC",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.8.3",
     "gh-pages": "^5.0.0",
-    "parcel": "^2.8.3"
+    "parcel": "^2.8.3",
+    "sass": "^1.63.6"
   }
 }
