@@ -13,7 +13,7 @@ This is a learning project for me so the website may be rough around the edges a
 2. Clone/donwload the repository ``git clone https://github.com/marcodamianperez/free-game-tracker``
 3. Cd into the project folder ``cd free-game-tracker``
 4. Install dependencies using ``npm install``
-5. Run development server using ``npm run start`` or just ``npm start``
+5. Run development server using ``npm run dev``
 6. Open your browser and go to  http://localhost:1234/
 
 If you would like to use your own api key (which I strongly recommend it):
@@ -29,7 +29,7 @@ Assuming you installed the dependencies and the dev server is running you should
 
 ## 🌐 Live version
 
-Check out the live version [here](https://marcodamianperez.github.io/free-game-tracker/). This online version doesn't properly work like when you run the development server due to some issues that I'm having with the bundler that I'm currently using. It will be fixed soon.
+Check out the live version [here](https://marcodamianperez.github.io/free-game-tracker/).
 
 ## 🌟 Features
 
