@@ -1,0 +1,75 @@
+.btn {
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    text-transform: uppercase;
+    display: inline-block;
+    font-size: 1.2rem;
+
+    @include respond(small) {
+        font-size: 1rem;
+    }
+
+    @include respond(medium) {
+        font-size: .9rem;
+        padding: .8rem 1.6rem;
+    }
+
+    @include respond(large) {
+        font-size: .8rem;
+    }
+    
+    &--white {
+        width: fit-content;
+        background-color: $color-white;
+        color: $color-blue;
+
+    }
+    
+    &--color {
+        background-image: linear-gradient(to right, $color-blue, $color-lilac);
+        color: $color-white;
+        width: 100%;
+        text-align: center;
+    }
+
+    &-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: .4rem;
+    }
+}
+
+// .scroll-down-btn {
+//     position: absolute;
+//     top: 90%;
+//     left: 50%;
+//     transform: translate(-50%, -50%);
+//     cursor: pointer;
+//     height: 5.5rem;
+//     width: 3.5rem;
+//     border: 2px solid #fff;
+//     border-radius: 10rem;
+
+//     &::before,
+//     &::after {
+//         content: "";
+//         position: absolute;
+//         background-color: #fff;
+//         width: 3px;
+//         top: 30%;
+//         left: 50%;
+//         transform: translate(-50%, -50%);
+//     }
+
+//     &::before {
+//         height: 1rem;
+//     }
+
+//     &::after {
+//         height: 4px;
+//         animation-name: scroll-down-move;
+//         animation-duration: 5000ms;
+//         animation-iteration-count: infinite;
+//     }
+// }

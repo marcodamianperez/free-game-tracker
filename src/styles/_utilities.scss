@@ -1,0 +1,33 @@
+.u-container {
+    width: 85%;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+    position: relative;
+}
+
+.u-margin-bottom-small {
+    margin-bottom: 2rem;
+}
+
+.u-margin-top-small {
+    margin-top: 2rem;
+}
+
+.u-padding-bottom-small {
+    padding-bottom: 2rem;
+}
+
+.u-break {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, $color-primary-medium, $color-primary-light, $color-primary-medium);
+    
+    @include respond(medium) {
+        grid-area: hr;
+    }
+}
+
+.u-d-none {
+    display: none;
+}
