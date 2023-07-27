@@ -1,4 +1,4 @@
-import Button from "../../components/Button/Button";
+import { Link } from "react-router-dom";
 import Navbar from "./../../components/Navbar/Navbar";
 import styles from "./Header.module.scss";
 
@@ -17,7 +17,9 @@ const Header = () => {
               Find, track and claim limited-time freebies
             </div>
           </h1>
-          <Button text="show me" buttonType="white" location="#giveaways" />
+          <Link to="#giveaways" className={`${styles.btn} ${styles.btnWhite}`}>
+            show me
+          </Link>
         </div>
       </div>
     </header>
