@@ -1,4 +1,5 @@
 import styles from "./GiveawaysCount.module.scss";
+import { BsController, BsPuzzle, BsGem } from "react-icons/bs";
 
 const GiveawaysCount = () => {
   return (
@@ -11,16 +12,16 @@ const GiveawaysCount = () => {
         </h2>
 
         <p className={styles.giveawaysCountText}>
-          <i className="bi bi-controller"></i>
-          <span id="qtyGames">179</span> Games
+          <BsController />
+          <span id="qtyGames">179</span>&nbsp;Games
         </p>
         <p className={styles.giveawaysCountText}>
-          <i className="bi bi-puzzle"></i>
-          <span id="qtyDlc">201</span> DLC's
+          <BsPuzzle />
+          <span id="qtyDlc">201</span>&nbsp;DLC's
         </p>
         <p className={styles.giveawaysCountText}>
-          <i className="bi bi-gem"></i>
-          <span id="qtyBeta">45</span> Beta Games
+          <BsGem />
+          <span id="qtyBeta">45</span>&nbsp;Beta Games
         </p>
       </div>
     </section>
