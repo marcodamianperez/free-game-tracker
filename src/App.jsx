@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Footer from "./views/Footer/Footer";
 import Home from "./views/Home/Home";
 import Details from "./views/Details/Details";
@@ -7,7 +7,7 @@ import Faq from "./views/Faq/Faq";
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/details/:idGiveaway" element={<Details />} />
@@ -15,7 +15,7 @@ const App = () => {
         <Route path="/faq" element={<Faq />} />
       </Routes>
       <Footer author="Marco Pérez" link="https://marcodamianperez.github.io/" />
-    </BrowserRouter>
+    </>
   );
 };
 
