@@ -1,0 +1,47 @@
+@import "./../../styles/Global.scss";
+
+.filter {
+  background-color: $color-primary-medium;
+}
+
+.filterMenu {
+  display: flex;
+  gap: 2rem;
+  overflow-x: scroll;
+
+  // hide scrollbar
+  // ::-webkit-scrollbar {
+  //     display: none;
+  // }
+  // -ms-overflow-style: none;
+  // scrollbar-width: none;
+}
+
+.menuBtn {
+  background-color: transparent;
+  border: none;
+  color: $color-grey-light;
+  padding: 2rem 0;
+  white-space: nowrap;
+
+  &:active {
+    color: $color-white;
+  }
+
+  @include respond(x-small) {
+    font-size: 1.3rem;
+  }
+
+  @include respond(small) {
+    font-size: 1.2rem;
+  }
+
+  @include respond(small) {
+    font-size: 1.1rem;
+
+    &:hover {
+      color: $color-white;
+      cursor: pointer;
+    }
+  }
+}
