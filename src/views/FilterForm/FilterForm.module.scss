@@ -1,0 +1,39 @@
+@import "./../../styles/Global.scss";
+
+.form {
+  display: flex;
+  gap: 1rem;
+
+  @include respond(x-small) {
+    gap: 3rem;
+  }
+
+  @include respond(small) {
+    gap: 6rem;
+  }
+
+  &Field {
+    border: none;
+  }
+
+  &Label {
+    color: $color-grey-light;
+    font-size: 1.4rem;
+    margin-right: 0.5rem;
+
+    @include respond(small) {
+      font-size: 1.3rem;
+    }
+  }
+
+  &Input {
+    margin-left: 1rem;
+    border: none;
+    background-color: $color-primary-medium;
+    color: $color-white;
+
+    @include respond(large) {
+      font-size: 1.1rem;
+    }
+  }
+}

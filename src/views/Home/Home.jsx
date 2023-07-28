@@ -1,14 +1,16 @@
 import React from "react";
 import Header from "../Header/Header";
 import GiveawaysCount from "../GiveawaysCount/GiveawaysCount";
-import Main from "../Main/Main";
+import Filter from "../Filter/Filter";
 
 const Home = () => {
   return (
     <>
       <Header />
       <GiveawaysCount />
-      <Main />
+      <main>
+        <Filter />
+      </main>
     </>
   );
 };
