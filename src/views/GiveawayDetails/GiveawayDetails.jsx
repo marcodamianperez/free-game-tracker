@@ -18,7 +18,7 @@ const GiveawayDetails = () => {
           className={`${styles.btn} ${styles.btnWhite} ${styles.btnIcon} ${styles.uMarginBottomSmall}`}
         >
           <BsCaretLeftFill />
-          Giveaways
+          Home
         </Link>
         <div className={styles.giveaway}>
           <div className={styles.giveawayImage}>

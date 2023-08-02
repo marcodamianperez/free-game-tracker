@@ -11,7 +11,7 @@ const Home = () => {
       <GiveawaysCount />
       <main>
         <Filter />
-        <CardList />
+        <CardList heading="Featured" />
       </main>
     </>
   );

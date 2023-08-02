@@ -11,7 +11,7 @@ const Details = () => {
       <main>
         <GiveawayDetails />
       </main>
-      <CardList />
+      <CardList heading="Other giveaways you may like" />
     </>
   );
 };
