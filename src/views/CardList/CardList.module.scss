@@ -1,0 +1,24 @@
+@import "./../../styles/Global.scss";
+
+.cardList {
+  background-color: $color-primary-medium;
+  padding: 2rem 0;
+}
+
+.cardListContainer {
+  display: grid;
+  gap: 2rem;
+
+  @include respond(small) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @include respond(medium) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  @include respond(large) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1.5rem;
+  }
+}

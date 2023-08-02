@@ -1,0 +1,38 @@
+.uContainer {
+  width: 85%;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100%;
+  position: relative;
+}
+
+.uMarginBottomSmall {
+  margin-bottom: 2rem;
+}
+
+.uMarginTopSmall {
+  margin-top: 2rem;
+}
+
+.uPaddingBottomSmall {
+  padding-bottom: 2rem;
+}
+
+.uBreak {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(
+    to right,
+    $color-primary-medium,
+    $color-primary-light,
+    $color-primary-medium
+  );
+
+  @include respond(medium) {
+    grid-area: hr;
+  }
+}
+
+.uDNone {
+  display: none;
+}

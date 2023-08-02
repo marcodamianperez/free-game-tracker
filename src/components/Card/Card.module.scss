@@ -1,0 +1,150 @@
+@import "./../../styles/Global.scss";
+
+.card {
+  background-color: $color-primary-light;
+  border-radius: 1rem;
+  margin: 0 auto;
+  color: $color-white;
+  box-shadow: 5px 5px 10px rgba($color-black, 0.4);
+  width: 100%;
+  transition: all 200ms ease-in-out;
+
+  @include respond(medium) {
+    &:hover {
+      transform: scale(1.02);
+      box-shadow: 5px 5px 15px rgba($color-black, 0.3);
+    }
+  }
+
+  &Image {
+    border-radius: 1rem 1rem 0 0;
+    overflow: hidden;
+    display: block;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      vertical-align: middle;
+    }
+  }
+
+  &Body {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    @include respond(x-small) {
+      padding: 1.5rem;
+    }
+
+    @include respond(small) {
+      padding: 1rem;
+    }
+
+    @include respond(medium) {
+      gap: 1.2rem;
+    }
+  }
+
+  &Title {
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: inherit;
+    display: block;
+
+    @include respond(small) {
+      font-size: 1.6rem;
+    }
+
+    @include respond(medium) {
+      font-size: 1.4rem;
+    }
+  }
+
+  &Info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &Price {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    &Previous {
+      text-decoration: line-through;
+      font-size: 1.7rem;
+
+      @include respond(small) {
+        font-size: 1.4rem;
+      }
+
+      @include respond(medium) {
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+  &Platforms {
+    font-size: 1.4rem;
+
+    @include respond(small) {
+      font-size: 1.2rem;
+    }
+
+    @include respond(small) {
+      font-size: 1rem;
+    }
+
+    span {
+      color: $color-grey-light;
+    }
+  }
+
+  &Social {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+
+    svg {
+      font-size: 2rem;
+
+      @include respond(small) {
+        font-size: 2.2rem;
+      }
+
+      @include respond(medium) {
+        font-size: 2.2rem;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  &Metric {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+
+    svg {
+      margin-right: 0.6rem;
+    }
+
+    @include respond(small) {
+      font-size: 1rem;
+    }
+
+    @include respond(medium) {
+      font-size: 0.9rem;
+    }
+
+    i {
+      margin-right: 0.5rem;
+    }
+  }
+}
