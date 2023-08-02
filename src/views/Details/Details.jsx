@@ -1,4 +1,5 @@
 import Navbar from "../../components/Navbar/Navbar";
+import CardList from "../CardList/CardList";
 import GiveawayDetails from "../GiveawayDetails/GiveawayDetails";
 
 const Details = () => {
@@ -10,6 +11,7 @@ const Details = () => {
       <main>
         <GiveawayDetails />
       </main>
+      <CardList />
     </>
   );
 };
