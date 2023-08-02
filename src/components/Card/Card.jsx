@@ -1,25 +1,21 @@
 import styles from "./Card.module.scss";
 import { BsShareFill, BsHeart, BsPeopleFill } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 const Card = () => {
   return (
     <div className={styles.card}>
-      <a href="./pages/details.html" className={styles.cardImage}>
-        <img
-          src="https://placehold.co/300x157"
-          alt="thumbnail"
-          data-id="${giveaway.id}"
-        />
-      </a>
+      <Link to="/details/${id}" className={styles.cardImage}>
+        <img src="https://placehold.co/300x157" alt="thumbnail" />
+      </Link>
       <div className={styles.cardBody}>
-        <a
-          href="./pages/details.html"
+        <Link
+          to="/details/${id}"
           className={styles.cardTitle}
           title="game title"
-          data-id="${giveaway.id}"
         >
           Game title
-        </a>
+        </Link>
         <div className={styles.cardInfo}>
           <div className={styles.cardPrice}>
             <span className={`${styles.badge} ${styles.badgeOutline}`}>
@@ -35,15 +31,12 @@ const Card = () => {
         <div className={styles.cardSocial}>
           <BsShareFill />
           <BsHeart />
-          <a
-            href="/pages/details.html"
+          <Link
+            to="/details/${id}"
             className={`${styles.btn} ${styles.btnColor}`}
-            data-id="${
-            giveaway.id
-          }"
           >
             View Giveaway
-          </a>
+          </Link>
         </div>
         <div className={styles.cardMetric}>
           <BsPeopleFill /> 1754 times claimed
