@@ -34,7 +34,14 @@ const GiveawaysCount = () => {
 
         setCount({ gameCount, dlcCount, betaGameCount });
       } catch (error) {
-        console.log(error);
+        console.log(
+          "There was an error while attempting to retrieve games info, please try again later."
+        );
+        setCount({
+          gameCount: "Amazing",
+          dlcCount: "Several",
+          betaGameCount: "The best",
+        });
       }
     };
 
@@ -56,7 +63,7 @@ const GiveawaysCount = () => {
         </p>
         <p className={styles.giveawaysCountText}>
           <BsPuzzle />
-          <span id="qtyDlc">{count.dlcCount}</span>&nbsp;DLC's
+          <span id="qtyDlc">{count.dlcCount}</span>&nbsp;DLCs
         </p>
         <p className={styles.giveawaysCountText}>
           <BsGem />
