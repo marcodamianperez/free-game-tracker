@@ -17,7 +17,9 @@ const Card = ({ id, thumbnail, title, worth, type, platforms, users }) => {
             <span className={`${styles.badge} ${styles.badgeOutline}`}>
               Free
             </span>
-            <span className={styles.cardPricePrevious}>${worth}</span>
+            <span className={styles.cardPricePrevious}>
+              {worth === "N/A" ? "" : worth}
+            </span>
           </div>
           <span className={`${styles.badge} ${styles.badgeSolid}`}>{type}</span>
         </div>
