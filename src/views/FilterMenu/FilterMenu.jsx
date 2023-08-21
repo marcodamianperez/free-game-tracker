@@ -1,106 +1,124 @@
 import styles from "./FilterMenu.module.scss";
 
-const FilterMenu = () => {
+const FilterMenu = ({ handleButtonClick }) => {
   return (
     <ul className={styles.filterMenu}>
       <li>
-        <button data-id="all" className={`${styles.menuBtn} ${styles.filter}`}>
+        <button
+          className={`${styles.menuBtn} ${styles.filter}`}
+          onClick={() => handleButtonClick("all")}
+        >
           Show All
         </button>
       </li>
       <li>
-        <button data-id="pc" className={`${styles.menuBtn} ${styles.filter}`}>
+        <button
+          className={`${styles.menuBtn} ${styles.filter}`}
+          onClick={() => handleButtonClick("pc")}
+        >
           PC
         </button>
       </li>
       <li>
         <button
-          data-id="steam"
           className={`${styles.menuBtn} ${styles.filter}`}
+          onClick={() => handleButtonClick("steam")}
         >
           Steam
         </button>
       </li>
       <li>
         <button
-          data-id="epic-games-store"
           className={`${styles.menuBtn} ${styles.filter}`}
+          onClick={() => handleButtonClick("epic-games-store")}
         >
           Epic Games Store
         </button>
       </li>
       <li>
-        <button data-id="gog" className={`${styles.menuBtn} ${styles.filter}`}>
+        <button
+          className={`${styles.menuBtn} ${styles.filter}`}
+          onClick={() => handleButtonClick("gog")}
+        >
           GOG
         </button>
       </li>
       <li>
         <button
-          data-id="origin"
           className={`${styles.menuBtn} ${styles.filter}`}
+          onClick={() => handleButtonClick("origin")}
         >
           Origin
         </button>
       </li>
       <li>
         <button
-          data-id="ubisoft"
           className={`${styles.menuBtn} ${styles.filter}`}
+          onClick={() => handleButtonClick("ubisoft")}
         >
           Ubisoft
         </button>
       </li>
       <li>
         <button
-          data-id="xbox-one"
           className={`${styles.menuBtn} ${styles.filter}`}
+          onClick={() => handleButtonClick("xbox-one")}
         >
           Xbox One
         </button>
       </li>
       <li>
-        <button data-id="ps4" className={`${styles.menuBtn} ${styles.filter}`}>
+        <button
+          className={`${styles.menuBtn} ${styles.filter}`}
+          onClick={() => handleButtonClick("ps4")}
+        >
           PS4
         </button>
       </li>
       <li>
-        <button data-id="ps5" className={`${styles.menuBtn} ${styles.filter}`}>
+        <button
+          className={`${styles.menuBtn} ${styles.filter}`}
+          onClick={() => handleButtonClick("ps5")}
+        >
           PS5
         </button>
       </li>
       <li>
         <button
-          data-id="switch"
           className={`${styles.menuBtn} ${styles.filter}`}
+          onClick={() => handleButtonClick("switch")}
         >
           Nintendo
         </button>
       </li>
       <li>
         <button
-          data-id="android"
           className={`${styles.menuBtn} ${styles.filter}`}
+          onClick={() => handleButtonClick("android")}
         >
           Android
         </button>
       </li>
       <li>
-        <button data-id="ios" className={`${styles.menuBtn} ${styles.filter}`}>
+        <button
+          className={`${styles.menuBtn} ${styles.filter}`}
+          onClick={() => handleButtonClick("ios")}
+        >
           IOS
         </button>
       </li>
       <li>
         <button
-          data-id="drm-free"
           className={`${styles.menuBtn} ${styles.filter}`}
+          onClick={() => handleButtonClick("drm-free")}
         >
           DRM-Free
         </button>
       </li>
       <li>
         <button
-          data-id="itchio"
           className={`${styles.menuBtn} ${styles.filter}`}
+          onClick={() => handleButtonClick("itchio")}
         >
           itch.io
         </button>
